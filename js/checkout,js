@@ -1,0 +1,13 @@
+// Modal handling for Credit Card payment
+function showCreditCardModal() {
+    const paymentMethod = document.getElementById('paymentMethod').value;
+    if (paymentMethod === 'credit card') {
+        document.getElementById('creditCardModal').style.display = 'block';
+    } else {
+        document.getElementById('orderForm').submit(); // Submit form if not Credit Card
+    }
+}
+
+function hideCreditCardModal() {
+    document.getElementById('creditCardModal').style.display = 'none';
+}

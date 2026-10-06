@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Delivery</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Page Styling */
+        .track-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .track-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-form h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #0c2642;
+        }
+
+        .track-form input {
+            padding: 15px;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .track-form button {
+            padding: 12px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-form button:hover {
+            background-color: #2e75c0;
+        }
+
+        .status-display {
+            margin-top: 30px;
+            text-align: center;
+            display: none; /* Hidden until user submits tracking number */
+        }
+
+        .status-display h2 {
+            font-size: 1.8rem;
+            color: #28a745;
+            margin-top: 10px;
+        }
+
+        .status-display p {
+            font-size: 1.2rem;
+        }
+
+        .status-display .status-card {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+        }
+
+        .fade-in.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Track Delivery Form -->
+    <div class="track-container">
+        <div class="track-form">
+            <h1>Track Your Delivery</h1>
+            <p>Check the status of your delivery.</p>
+            <form id="trackingForm">
+                <input type="text" id="trackingNumber" class="form-control" placeholder="Enter your tracking number" required>
+                <button type="submit" class="btn btn-primary w-100">Check Status</button>
+            </form>
+        </div>
+
+        <!-- Status Display Section -->
+        <div class="status-display fade-in" id="statusDisplay">
+            <h2>Status: <span id="deliveryStatus"></span></h2>
+            <div class="status-card">
+                <p id="additionalInfo"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        document.getElementById("trackingForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            
+            // Get the tracking number from the input
+            const trackingNumber = document.getElementById("trackingNumber").value;
+
+            // Simulate checking delivery status (for this example, it's hard-coded)
+            let status;
+            let additionalInfo;
+
+            if (trackingNumber === "123456789") {
+                status = "In Transit";
+                additionalInfo = "Your package is currently on the way and should arrive in 2 days.";
+            } else if (trackingNumber === "987654321") {
+                status = "Delivered";
+                additionalInfo = "Your package was delivered on 28th September 2024.";
+            } else {
+                status = "Unknown";
+                additionalInfo = "Sorry, we couldn't find any information for the given tracking number.";
+            }
+
+            // Display the status to the user
+            document.getElementById("deliveryStatus").textContent = status;
+            document.getElementById("additionalInfo").textContent = additionalInfo;
+            document.getElementById("statusDisplay").style.display = "block"; // Show the status display section
+            document.getElementById("statusDisplay").classList.add("show"); // Fade in effect
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+        body {
+            background-color: #2c2c2c; /* Dark background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif; /* Font family */
+        }
+
+        .dashboard {
+            padding: 20px;
+        }
+
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box {
+            background-color: #3a3a3a; /* Box background */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 30%; /* Responsive sizing */
+            min-width: 200px; /* Minimum width */
+        }
+
+        .newest-users {
+            margin: 20px 0; /* Space from the dashboard boxes */
+            float: left; 
+            width: 450px; 
+            max-height: 500px; 
+            overflow-y: auto; 
+            background-color: #3a3a3a; 
+            border-radius: 10px; 
+            padding: 15px; 
+            margin-left: 20px;
+        }
+
+        .newest-users table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px; /* Space above the table */
+        }
+
+        .newest-users th {
+            background-color: #3a3a3a; /* Darker background for header */
+            text-align: center; /* Center text in header */
+            padding: 15px; /* Increased padding for header */
+            font-size: 18px; /* Increased font size for header */
+        }
+
+        .newest-users td {
+            background-color: #444; /* Dark background for table cells */
+            padding: 15px; /* Increased padding for larger text */
+            text-align: left; /* Default text alignment for cells */
+            border: 1px solid #555; /* Darker border color */
+            font-size: 16px; /* Adjust text size */
+        }
+
+        .newest-users tr:nth-child(even) td {
+            background-color: #3a3a3a; /* Dark background for even rows */
+        }
+
+        .empty {
+            text-align: center; /* Center align for empty message */
+            font-size: 20px; /* Larger font size for empty message */
+        }
+
+        .total-sales {
+            clear: both; /* Ensure it appears below the floated elements */
+            width: 600px;  /* Increased width */
+            max-height: 500px; 
+            background-color: #3a3a3a; 
+            border-radius: 10px; 
+            padding: 15px; 
+            margin-left: 20px; 
+            margin-top: 20px; /* Added top margin */
+        }
+
+        canvas {
+            max-width: 100%; /* Make sure canvas fits inside the container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .top-customers td, .top-customers th {
+        font-size: 18px; /* Increased font size for table text */
+        padding: 15px; /* Adjusted padding for better spacing */
+    }
+    .sales-chart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+ 
