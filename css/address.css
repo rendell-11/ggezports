@@ -1,0 +1,112 @@
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .form-container {
+        max-width: 800px;
+        margin: 40px auto; /* Added more space at the top */
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .form-container h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .form-grid {
+        display: flex;
+        gap: 20px;
+    }
+
+    .form-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* More space between input fields */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="submit"] {
+        padding: 16px; /* Wider padding for input fields */
+        border: none;
+        border-radius: 5px;
+        font-size: 13px; /* Slightly larger font for better readability */
+        background: #2a2a2a;
+        color: #fff;
+        width: 100%;
+    }
+
+    .full-width {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    input[type="submit"] {
+        background: #e53935; /* Red color for button */
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s;
+        padding: 14px; /* Slightly larger button */
+    }
+
+    input[type="submit"]:hover {
+        background: #c62828; /* Darker red on hover */
+    }
+
+    .address-list {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #1e1e1e;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .address-list h3 {
+        font-size: 24px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .address-container {
+        display: grid;
+        gap: 20px;
+    }
+
+    .address-box {
+        background: #292929;
+        padding: 20px;
+        border-radius: 8px;
+        font-size: 15px;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+
+    .address-box:hover {
+        transform: scale(1.02);
+    }
+
+    .address-box p {
+        margin: 8px 0;
+    }
+
+    .delete-btn {
+        display: inline-block;
+        padding: 8px 16px;
+        margin-top: 10px;
+        background: #e53935;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    .delete-btn:hover {
+        background: #c62828;
+    }

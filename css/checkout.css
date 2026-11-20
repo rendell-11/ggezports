@@ -1,0 +1,187 @@
+
+      /* Styles for the order display */
+      .display-orders {
+          display: flex;
+          flex-direction: column;
+          align-items: center; /* Center items horizontally */
+          margin-bottom: 30px;
+      }
+      .order-item {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end; /* Align items to the end (right) */
+          margin-bottom: 15px; /* Space between items */
+          width: 100%; /* Full width */
+          max-width: 600px; /* Optional: Limit max width for better centering */
+      }
+      .product-image {
+          width: 100px; /* Maintain the image size */
+          height: auto;
+          margin-left: 15px; /* Space between text and image */
+      }
+      .order-item p {
+          font-size: 2rem; /* Large font size for product details */
+          margin-right: 15px; /* Space between text and image */
+          flex-grow: 1; /* Allow text to take available space */
+          text-align: left; /* Ensure text aligns to the left */
+      }
+      .flex {
+          display: flex;
+          flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+          gap: 20px; /* Space between items */
+      }
+      .inputBox {
+          flex: 1 1 300px; /* Allow flexible sizing of input boxes */
+          min-width: 220px; /* Minimum width for input boxes */
+      }
+      .grand-total {
+          font-size: 1.5rem;
+          margin-top: 20px;
+      }
+/* Style for "Select Shipping Address" title */
+.checkout-orders h3 {
+    color: white;
+    font-size: 1.6rem; /* Medium size */
+}
+
+/* Style for address boxes */
+.address-box {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px;
+}
+
+/* Style for radio buttons */
+.address-box input[type="radio"] {
+    margin-right: 15px; /* Space between radio button and label */
+    margin-top: 30px;
+    transform: scale(1.3); /* Slightly enlarge for better visibility */
+    align-self: flex-start; /* Keep it at the top-left of the label */
+}
+
+/* Style for address label */
+.address-box label {
+    color: white;
+    font-size: 1.rem; /* Medium font size */
+    line-height: 1.6; /* Improve readability */
+}
+/* Style for address box background */
+/* Style for address box background */
+.address-box {
+    display: flex;
+    align-items: center;
+    background-color: #333; /* Lighter dark gray background */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+/* Hover effect for address box */
+.address-box:hover {
+    background-color: red; /* Slightly lighter color on hover */
+    transform: translateY(-5px); /* Lift effect */
+}
+
+/* Style for radio buttons inside the address box */
+.address-box input[type="radio"] {
+    margin-right: 15px;
+    transform: scale(1.3);
+    align-self: flex-start;
+}
+
+/* Style for the text in the address box */
+.address-box label {
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+        .manage-address-button {
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .manage-btn {
+            display: inline-block;
+            width: auto;
+            padding: 8px 16px;
+            font-size: 14px;
+            text-align: center;
+            background-color: red;
+            border-color: #6c757d;
+            color: #fff;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .manage-btn:hover {
+            background-color: black;
+            color: white;
+            border-color: #545b62;
+        }
+
+        .discounted-price {
+            margin-top: 10px;
+            font-weight: bold;
+            color: green;
+        }
+
+        .remove-discount-btn {
+            margin-top: 10px;
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Discount  */
+        .discount-form .apply-btn {
+        background-color: green;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 150px; /* Set a custom width */
+    }
+
+    .discount-form .apply-btn:hover {
+        background-color: darkgreen;
+    }
+
+    .discount-form .box {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .discounted-price {
+        font-size: 18px; /* Medium size text */
+        font-weight: bold;
+        color: green;
+        margin-top: 15px;
+    }
+
+    .remove-discount-btn {
+        background-color: red;
+        color: white;
+        font-size: 10px; /* Medium size button */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .remove-discount-btn:hover {
+        background-color: darkred;
+    }
+
+  
+
+
+

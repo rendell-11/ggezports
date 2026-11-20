@@ -1,0 +1,98 @@
+/* General Profile Section */
+.profile {
+  background-color: transparent;  /* Remove black background */
+  max-width: 1200px;
+  color: #fff;  /* White text color for general profile info */
+  margin: 0 auto;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 20%;
+  background-color: white;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile-info {
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.profile-orders {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* Order Status Buttons */
+.icon-text {
+  background-color: #4b4b4b;  /* Lighter, darker gray background for buttons */
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Ensures both icon and text are centered */
+  gap: 10px;
+  color: white;  /* White text color */
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for all buttons */
+.icon-text:hover {
+  background-color: #666666;  /* Slightly lighter gray on hover */
+  transform: scale(1.05);  /* Slightly enlarge the button */
+}
+
+/* Icons inside the buttons */
+.icon-text .icons {
+  color: white;  /* Ensure icons are white */
+  font-size: 20px;  /* Adjust icon size */
+  display: flex;
+  justify-content: center;  /* Center icons horizontally */
+  align-items: center;  /* Center icons vertically */
+}
+
+/* Active State (when an order is in this status) */
+.icon-text.active {
+  background-color: #808080;  /* Green background for active state */
+}
+
+/* Specific classes for each order status */
+.to-ship {
+  background-color: #808080;  /* Muted blue for "To ship" */
+}
+
+.to-receive {
+  background-color: #808080;  /* Muted yellow for "To receive" */
+}
+
+.cancelled {
+  background-color: #808080;  /* Muted gray for "Cancelled" */
+}
+
+.to-complete {
+  background-color: #808080;  /* Muted purple for "Completed" */
+}
+
+/* Override for text color for all buttons to ensure it is white */
+.icon-text span {
+  color: white !important;  /* Force text color to be white */
+}

@@ -1,0 +1,9 @@
+# Composer dependencies (reinstall with: composer install)
+/vendor/
+
+# Logs
+*.log
+
+# Personal photos
+/images/me.jpg
+/images/Kervs.jpg

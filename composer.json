@@ -1,0 +1,7 @@
+{
+    "require": {
+      "league/oauth2-google": "^3.0",
+        "stripe/stripe-php": "^16.2",
+        "paypal/rest-api-sdk-php": "^1.14"
+    }
+  }
